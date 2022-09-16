@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="css/img/weather.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/pages/common.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 
 <body>
@@ -15,6 +16,7 @@
     <header>
 
         <h1>
+            <img src="css/img/cloudy-day.png" alt="weatherlogo">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -33,12 +35,12 @@
 <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
             <form action="">
-                <select name="seleccionar_ciudad" id="seleccionar_ciudad">
-                    <option value="Seleccionar ciudad" selected disabled>Seleccionar ciudad</option>
-                    <option value="Rosario">Rosario</option>
+                <select name="seleccionar_ciudad" class="textos">
+                    <option value="Seleccionar ciudad" disabled>Seleccionar ciudad</option>
+                    <option value="Rosario" selected>Rosario</option>
                     <option value="Rafaela">Rafaela</option>
                 </select>
-                <input type="button" value="Consultar">
+                <input type="button" value="Consultar" class="botones">
             </form>
         </section>
         <section id="section-weather-result">
@@ -58,6 +60,9 @@ botón de consultar -->
     <footer>
     <p>
         Desarrollado con ♥ - LC2
+    </p>
+    <p>
+        <a href="https://www.flaticon.com/free-icons/cloudy" title="cloudy icons">Cloudy icons created by kosonicon - Flaticon</a>
     </p>
     </footer>
 
