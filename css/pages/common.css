@@ -7,7 +7,6 @@
     }
 
 :root {
-    /* Declaro variables CSS con colores principales */
     --color-theme: #00594c;
     --color-active: #5df2d6;
     --color-back-active: #04957d;
@@ -147,7 +146,7 @@ main p {
     margin-bottom: 16px;
     }
 
-/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+
  @media (min-width: 400px) {
 main {
     padding-left: 10%;
@@ -158,4 +157,27 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     }
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 200px 0 0 -25px;
+}
+
+.contenedor{
+    position: relative;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
