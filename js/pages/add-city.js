@@ -24,6 +24,7 @@ addCity.onclick = function(){
     
     if (data.includes(city.value)){
         mensaje3.style.visibility = "visible"
+        loading.style.display = "none"
     }
     else
     {

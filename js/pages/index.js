@@ -25,6 +25,7 @@ function AgregarCiudades(){
 consultar.onclick = async function ObtenerDatos(){
         
         showLoader()
+        card.style.visibility = "hidden"
     
         try{
             let opcion = document.getElementById("select").value;
